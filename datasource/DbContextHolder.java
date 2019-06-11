@@ -1,8 +1,4 @@
-package ru.mdimension.mda.lib.db.datasource;
-
-/**
- * @author akrasnov on 16.05.2019
- */
+package ru.lib.db.datasource;
 
 public class DbContextHolder {
 
