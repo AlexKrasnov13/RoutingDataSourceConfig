@@ -1,4 +1,4 @@
-mda:
+routing:
   slave:
     enable: true
 
