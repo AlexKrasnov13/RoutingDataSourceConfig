@@ -1,4 +1,4 @@
-package ru.mdimension.mda.lib.db.datasource;
+package ru.lib.db.datasource;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -9,9 +9,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 
-/**
- * @author akrasnov on 16.05.2019
- */
 @Aspect
 @Component
 @ConditionalOnBean(name = "routingDataSource")
