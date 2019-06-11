@@ -1,8 +1,4 @@
-package ru.mdimension.mda.lib.db.datasource;
-
-/**
- * Created by ashamov on 19.12.2016.
- */
+package ru.lib.db.datasource;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -21,7 +17,7 @@ import java.util.Map;
 
 @Configuration
 @EnableTransactionManagement
-@ConditionalOnProperty(value = "mda.slave.enable", havingValue = "true")
+@ConditionalOnProperty(value = "routing.slave.enable", havingValue = "true")
 public class RoutingDataSourceConfiguration {
     private final Logger log = LoggerFactory.getLogger(RoutingDataSourceConfiguration.class);
 
