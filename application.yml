@@ -1,0 +1,21 @@
+mda:
+  slave:
+    enable: true
+
+spring:
+  datasource:
+    username: username
+    password: password
+    hikari:
+      maximumPoolSize: 6
+      minimumIdle: 4
+      driverClassName: org.postgresql.Driver
+      jdbcUrl: jdbc:postgresql://localhost:5432/master
+
+  slave-datasource:
+    username: username
+    password: password
+    hikari:
+      maximumPoolSize: 6
+      minimumIdle: 4
+      jdbcUrl: jdbc:postgresql://localhost:5432/slave
